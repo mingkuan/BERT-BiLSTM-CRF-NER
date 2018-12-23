@@ -41,8 +41,8 @@ if os.name == 'nt':
     bert_path = 'H:\迅雷下载\chinese_L-12_H-768_A-12\chinese_L-12_H-768_A-12'
     root_path = r'C:\workspace\python\BERT-BiLSMT-CRF-NER'
 else:
-    bert_path = '/home/macan/ml/data/chinese_L-12_H-768_A-12/'
-    root_path = '/home/macan/ml/workspace/BERT-BiLSTM-CRF-NER'
+    bert_path = '../bert/pretrained/chinese_L-12_H-768_A-12/'
+    root_path = './'
 
 flags.DEFINE_string(
     "data_dir", os.path.join(root_path, 'NERdata'),
